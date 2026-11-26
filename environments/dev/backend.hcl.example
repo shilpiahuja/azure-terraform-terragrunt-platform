@@ -1,0 +1,8 @@
+# Copy this file to backend.hcl and replace the placeholders.
+# The backend.hcl file is ignored and must not be committed.
+
+resource_group_name  = "<remote-state-resource-group-name>"
+storage_account_name = "<globally-unique-storage-account-name>"
+container_name       = "terraform-state"
+key                  = "dev/terraform.tfstate"
+use_azuread_auth     = true
